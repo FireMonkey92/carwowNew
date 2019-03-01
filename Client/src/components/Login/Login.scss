@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
+.login_container {
+    font-family: "Lato", sans-serif;
+    .login_form {
+        background-color: #fff;
+        h1 {
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+        .btn_google {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 15px 0;
+            span {
+                color: green !important;
+            }
+            i {
+                padding: 5px;
+                margin-right: 10px;
+                font-weight: normal;
+            }
+        }
+        .login-buttons-divider {
+            // position: relative;
+            margin-top: 24px;
+            margin: 27px auto;
+            padding-top: 16px;
+            border-top: 1px solid rgba(33, 34, 36, 0.15);
+            text-align: center;
+            width: 85%;
+        }
+        .login-divider-or--white {
+            background-color: #fff;
+        }
+        .login-divider-or {
+            margin: auto;
+            width: 48px;
+            margin-top: -29px;
+            background-color: #fff;
+            font-weight: 700;
+            color: #9da5b2;
+            height: 32px;
+        }
+        span {
+            color: red;
+        }
+        label.form-label {
+            float: left;
+            margin-bottom: 0px;
+        }
+        .btn-outline-success {
+            width: 100%;
+            padding: 10px 0;
+            margin-bottom: 50px;
+            box-shadow: rgba(0, 0, 0, 0.479) 0px 2px 2px 0px;
+        }
+    }
+}

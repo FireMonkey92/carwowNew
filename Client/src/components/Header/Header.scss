@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.navbar {
+    padding: 0;
+    color: #fff;
+    background-color: #00a4ff;
+    .navbar-toggler {
+        margin-left: 10px;
+    }
+    .navbar-toggler-icon {
+        border: none !important;
+        color: #fff;
+    }
+    .title {
+        font-size: 40px;
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 700;
+        margin-bottom: 10px;
+        padding: 0 20px;
+    }
+    .navbar-nav {
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 25px 9px;
+            font-weight: 700;
+            &:hover {
+                background-color: #2bb3ff;
+            }
+        }
+    }
+    .right_nav {
+        display: flex !important;
+        flex-direction: row;
+        align-items: center;
+        i {
+            color: #fff;
+            text-decoration: none;
+            padding: 26px 12px;
+            font-size: 18px;
+            font-weight: 700;
+            cursor: pointer;
+            &:hover {
+                background-color: #2bb3ff;
+            }
+            span {
+                padding: 0 5px;
+            }
+        }
+        a .fa-user {
+            padding: 0;
+        }
+    }
+    .nav-link {
+        padding: 0;
+    }
+    .nav_selected {
+        background-color: #2bb3ff;
+    }
+    .nav_list.hide {
+        display: none;
+    }
+    .searchBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        padding: 10px 10px;
+    }
+    .searchBar input {
+        flex-grow: 1;
+        background-color: #00a4ff;
+        color: #fff !important;
+        font-family: 'Lato', sans-serif;
+        border: none;
+        border-left: solid 1px #779ed8;
+        border-right: solid 1px #779ed8;
+        font-size: 20px;
+        padding: 0 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+        &::placeholder {
+            color: #fff !important;
+        }
+        &:hover {
+            outline: none
+        }
+    }
+    .close {
+        padding: 15px;
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        cursor: pointer;
+    }
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    border: 1px solid rgba(43, 41, 41, 0.575);
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    transition: all ease-in-out 0.6s;
+    .head {
+        display: flex;
+        align-items: center;
+        padding: 10px 20px;
+        border-bottom: 1px solid #000;
+        h3 {
+            font-size: 20px;
+            color: rgb(97, 97, 97);
+            flex-grow: 1;
+        }
+    }
+    .closebtn {
+        font-size: 20px;
+        cursor: pointer;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+        a {
+            font-size: 18px;
+        }
+    }
+}
+
+.fav_container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    h3 {
+        font-size: 24px;
+        font-weight: 400;
+        text-align: center;
+    }
+    p {
+        font-size: 20px;
+        font-weight: 300;
+        text-align: center;
+        width: 60%;
+        margin: 10px auto 0 auto;
+    }
+    .No_car_image {
+        background: url('https://www-assets.carwow.co.uk/packs/src/images/saved-cars/no-saved-cars-369ce358257cc4edb5e44229f053eccc.svg');
+        background-size: cover !important;
+        width: 300px;
+        height: 400px;
+        position: absolute;
+        top: 28%;
+        left: 20%;
+    }
+}
+
+.fav_list_container {
+    padding-bottom: 20px;
+    margin: 20px;
+    border-bottom: 1px solid #33b3b3;
+    .fav_detail {
+        padding: 0;
+        text-align: right;
+        position: relative;
+        .logo {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .fav_brand {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            font-weight: 700;
+        }
+        span {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            
+        }
+    }
+}
+ #favHeart {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
+        .fa-heart {
+            color: #807f7f;
+            font-size: 25px;
+        }
+        &:hover {
+            cursor: pointer;
+            .fa-heart {
+                color: #d8341e;
+                font-size: 25px;
+            }
+        }
+        &:focus {
+            outline-style: none;
+        }
+        .fav {
+            color: #d8341e;
+            transform: rotate(360deg);
+            transition: all .3s ease-in-out;
+        }
+    }
